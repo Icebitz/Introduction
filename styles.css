@@ -539,10 +539,6 @@ ul {
   box-shadow: 0 16px 38px rgba(0, 0, 0, 0.45);
 }
 
-.contact-link-static {
-  margin: 0;
-}
-
 .contact-icon {
   width: 20px;
   height: 20px;
@@ -560,11 +556,6 @@ ul {
 .contact-link-secondary:focus-visible {
   background: rgba(59, 130, 246, 0.14);
   box-shadow: 0 20px 44px rgba(0, 0, 0, 0.5);
-}
-
-.contact-link-static:hover,
-.contact-link-static:focus-visible {
-  transform: none;
 }
 
 .site-footer {
