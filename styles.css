@@ -514,9 +514,15 @@ ul {
   margin-bottom: 0;
 }
 
+.contact-links {
+  display: grid;
+  gap: 12px;
+}
+
 .contact-link {
   display: inline-flex;
   align-items: center;
+  gap: 10px;
   min-height: 58px;
   padding: 0 20px;
   color: #04101f;
@@ -526,11 +532,39 @@ ul {
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
+.contact-link-secondary {
+  color: var(--ink);
+  background: var(--surface-strong);
+  border: 1px solid var(--line-strong);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.45);
+}
+
+.contact-link-static {
+  margin: 0;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
 .contact-link:hover,
 .contact-link:focus-visible {
   transform: translateY(-2px);
   outline: none;
   box-shadow: 0 22px 56px rgba(37, 99, 235, 0.45);
+}
+
+.contact-link-secondary:hover,
+.contact-link-secondary:focus-visible {
+  background: rgba(59, 130, 246, 0.14);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.5);
+}
+
+.contact-link-static:hover,
+.contact-link-static:focus-visible {
+  transform: none;
 }
 
 .site-footer {
